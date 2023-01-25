@@ -77,16 +77,28 @@
       */
 
       const changePcontent = function () {
-        //
+        const par = document.querySelectorAll('div p');
+        for (let i=0; i < par.length; i++)
+        {
+          const parEll = par[i];
+          parEll.innerText = "fa un po' freddo"
+        }
       };
+      changePcontent("fa un po' freddo");
 
       /* EXERCISE 4
        Write a function for changing the href property of every link to https://www.google.com
       */
 
       const changeUrls = function () {
-        //
+        const anchors = document.querySelectorAll('a');
+      
+        for (let i = 0; i < anchors.length; i++) {
+    anchors[i].href = "https://www.google.com/" + anchors[i].href
+}
       };
+      changeUrls("https://www.google.com");
+    
 
       /* EXERCISE 5
        Write a function for adding a new list item in the second unordered list.
