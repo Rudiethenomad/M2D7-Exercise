@@ -105,8 +105,13 @@
       */
 
       const addToTheSecond = function (content) {
-        //
+        /*let ol = document.querySelector('secondList').innerHTML = "<li><input> nuovo oggetto </li>";*/
+        //not sure why the above wouldn't work
+
+        const ul = document.querySelectorAll("ul")[1];
+           ul.innerHTML += `<li>${content}</li>`;
       };
+      addToTheSecond("nuovo voce di elenco");
 
       /* EXERCISE 6
        Write a function for adding a second paragraph to the first div.
