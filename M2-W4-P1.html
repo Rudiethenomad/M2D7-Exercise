@@ -118,8 +118,21 @@
       */
 
       const addParagraph = function (content) {
-        //
+        /*
+        const firstDiv = document.querySelectorAll("div")[0];
+        let par = document.createElement("p")
+        par.innerText = "content"
+        div.appendChild(par)
+        */
+
+          let div = document.querySelectorAll("div")[0]
+           let p = document.createElement("p")
+           p.innerText = content
+           div.appendChild(p) 
+
+
       };
+      addParagraph("Questo e il sottotitolo della pagina")
 
       /* EXERCISE 7
        Write a function for making the first unordered list disappear.
