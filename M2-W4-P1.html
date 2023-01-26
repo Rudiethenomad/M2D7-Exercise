@@ -45,11 +45,12 @@
 
     <div>
       <p>And this text is just for the exercise too!</p>
-      <h2 style="color: red">
+            <h2 style="color: red">
         Save this page on your computer and open it with VSCode to get the
         questions!
       </h2>
     </div>
+  
     <script>
       /* EXERCISE 1
        Write a function for changing the title of the document in something else.
@@ -89,7 +90,7 @@
       /* EXERCISE 4
        Write a function for changing the href property of every link to https://www.google.com
       */
-
+//Come back to this, the link doesn't take you to google
       const changeUrls = function () {
         const anchors = document.querySelectorAll('a');
       
@@ -97,7 +98,7 @@
     anchors[i].href = "https://www.google.com/" + anchors[i].href
 }
       };
-      changeUrls("https://www.google.com");
+      changeUrls("https://www.google.com/");
     
 
       /* EXERCISE 5
@@ -160,6 +161,7 @@
       */
 
       const makeItClickable = function () {
+        //this didn't wokr
       /*let title = document.querySelector("h1");
       title.addEventListener("click", function (e)
       {
@@ -183,10 +185,13 @@ hdg.addEventListener('click', function() {
       /* EXERCISE 10
        Change the footer text with something else when the user clicks on it.
       */
-
+     //there is no footer 
       const changeFooterText = function () {
-        //
       };
+changeFooterText("")
+
+
+
 
       /* EXERCISE 11
        Attach an event listener to the input field in the page for console logging its value just after any keystroke.
