@@ -160,8 +160,25 @@
       */
 
       const makeItClickable = function () {
-        //
+      /*let title = document.querySelector("h1");
+      title.addEventListener("click", function (e)
+      {
+        e.target.classList.toggle ("myHeading")
+      })
+    };*/
+
+    const hdg = document.querySelector('h1');
+    const listColor = ['red', 'green', 'blue', 'yellow'];
+
+let currentColor = 1;
+hdg.addEventListener('click', function() {
+  this.style.color = listColor[currentColor++];
+  if (currentColor == listColor.length) {
+    currentColor = 0;
+  }
+})
       };
+    makeItClickable()
 
       /* EXERCISE 10
        Change the footer text with something else when the user clicks on it.
