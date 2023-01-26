@@ -147,9 +147,13 @@
        Write a function for making the background of every unordered list green.
       */
 
-      const paintItGreen = function () {
-        
-      };
+      const lst = document.querySelectorAll("ul")
+      {
+           for(let i = 0; i < lst.length; i++) {
+               let ul = lst[i]
+               ul.style.background = "green"
+           }
+          }
 
       /* EXERCISE 9
        Make the heading of the page change color every time the user clicks on it.
